@@ -17,11 +17,11 @@ assets.register('all_css', css)
 
 @app.route('/')
 def index():
-    return render_template('layouts.html', title= 'Home')
+    return render_template('layouts.html')
 
 @app.route('/About')
 def about():
-    return render_template('About.html', title= 'About')
+    return render_template('About.html')
 
 @app.route('/navbar')
 def menubar():
