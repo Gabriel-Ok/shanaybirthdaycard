@@ -1,0 +1,11 @@
+{% extends 'layouts.html'%}
+
+{% block content%}
+    <h1>Send text</h1>
+    <form class="form-group" action="/Sms.html" method="POST">
+      <input type="text" name="name" placeholder="NAME">
+      <input type="" name="number" placeholder="NUMBER" >
+      <input type="submit" name="submit">
+
+    </form>
+{% endblock content%}

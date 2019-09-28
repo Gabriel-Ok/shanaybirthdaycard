@@ -1,0 +1,10 @@
+{% extends 'layouts.html'%}
+
+{% block content%}
+    {% for post in posts%}
+      <h1>{{post.author}}</h1>
+      <h2>posted on {{post.date}}</h2>
+      <p>this is called {{post.text}}</p>
+    {%  endfor%}
+    
+{% endblock content%}
